@@ -1,0 +1,21 @@
+
+.chatbot-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .chatbot-container {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}

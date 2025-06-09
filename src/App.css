@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(120deg, #e0e7ff 0%, #f0f4ff 100%);
+}
+
+/* .App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.App {
+  min-height: 100vh;
+  height: 100vh;         /* Add this */
+  width: 100vw;          /* Add this */
+  display: flex;
+  align-items: stretch;  /* Change from center to stretch */
+  justify-content: stretch; /* Change from center to stretch */
+}
