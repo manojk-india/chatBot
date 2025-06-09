@@ -93,7 +93,7 @@
   color: #22c55e;
   background: #eef2ff;
 }
-.comment-box {
+/* .comment-box {
   margin-top: 8px;
   display: flex;
   gap: 6px;
@@ -111,7 +111,46 @@
   border-radius: 4px;
   padding: 4px 10px;
   cursor: pointer;
+} */
+
+.comment-box {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  background: #f4f8ff;
+  border: 1px solid #f1f5f9;      /* Even lighter border */
+  border-radius: 18px;            /* Match your message bubble */
+  box-shadow: none;               /* Remove shadow for no dark corners */
+  padding: 12px 18px;             /* Match message bubble padding */
+  width: 100%;                    /* Take full width of parent */
+  max-width: none;                /* Remove max-width limit */
 }
+
+.comment-box input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fff;
+}
+.comment-submit-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.comment-submit-btn:hover {
+  background: #4f46e5;
+}
+
+
+
 .feedback-comment {
   margin-top: 6px;
   font-size: 0.97em;
@@ -125,4 +164,12 @@
   margin-right: 4px;
 }
 
+.sender-label {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #6366f1;
+  margin-bottom: 2px;
+  margin-left: 8px;
+  letter-spacing: 0.01em;
+}
 
