@@ -1,0 +1,175 @@
+
+.tab-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-weight: 500;
+  padding: 4px 16px;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 2px solid transparent;
+  transition: background 0.2s, border-bottom 0.2s;
+  font-size: 1em;
+}
+
+.tab.active {
+  background: #eef2ff;
+  border-bottom: 2px solid #6366f1;
+  color: #4f46e5;
+}
+
+.tab-content {
+  min-height: 32px;
+  margin-bottom: 8px;
+}
+
+.bubble-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.source-chip {
+  display: inline-flex;
+  align-items: center;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 0.95em;
+  text-decoration: none;
+  border: 1px solid #d1d5db;
+  transition: background 0.2s, color 0.2s;
+}
+.source-chip:hover {
+  background: #6366f1;
+  color: #fff;
+}
+.no-sources {
+  color: #aaa;
+  font-size: 0.97em;
+  margin-top: 4px;
+}
+
+.bubble-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.bubble-time {
+  font-size: 0.78rem;
+  color: #000;  /* Black color */
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
+.like-btn, .dislike-btn {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.like-btn.selected, .dislike-btn.selected {
+  color: #22c55e;
+  background: #eef2ff;
+}
+/* .comment-box {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+}
+.comment-box input {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #c7d2fe;
+  border-radius: 4px;
+}
+.comment-submit-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+} */
+
+.comment-box {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  background: #f4f8ff;
+  border: 1px solid #f1f5f9;      /* Even lighter border */
+  border-radius: 18px;            /* Match your message bubble */
+  box-shadow: none;               /* Remove shadow for no dark corners */
+  padding: 12px 18px;             /* Match message bubble padding */
+  width: 100%;                    /* Take full width of parent */
+  max-width: none;                /* Remove max-width limit */
+}
+
+.comment-box input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fff;
+}
+.comment-submit-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.comment-submit-btn:hover {
+  background: #4f46e5;
+}
+
+
+
+.feedback-comment {
+  margin-top: 6px;
+  font-size: 0.97em;
+  color: #6366f1;
+  background: #f4f8ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.feedback-label {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.sender-label {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #6366f1;
+  margin-bottom: 2px;
+  margin-left: 8px;
+  letter-spacing: 0.01em;
+}
+
