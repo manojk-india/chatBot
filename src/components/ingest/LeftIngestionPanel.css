@@ -1,5 +1,8 @@
 .left-ingestion-panel {
-  width: 380px;
+  scrollbar-gutter: stable;
+  width: 550px;
+  min-width: 550px; 
+  box-sizing: border-box;
   height: 100vh;
   background: linear-gradient(135deg, #6366f1 70%, #a5b4fc 100%);
   color: #fff;
