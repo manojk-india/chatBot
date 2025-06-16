@@ -1,0 +1,15 @@
+.file-ingestion-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .file-ingestion-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,66 @@
+
+.chat-area {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f7f9fc;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.chat-header {
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #e0e7ff;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4f46e5;
+  letter-spacing: 0.5px;
+}
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* .download-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  color: #6366f1;
+  transition: color 0.2s;
+  padding: 0 8px;
+}
+.download-btn:hover {
+  color: #4f46e5;
+} */
+
+
+
+.download-btn,
+.refresh-btn {
+  transition: background 0.2s, color 0.2s;
+  border-radius: 6px;
+}
+
+.download-btn:hover,
+.refresh-btn:hover {
+  background: #e0e7ff;
+  color: #6366f1;
+  transform: scale(1.08);
+}
+.download-btn,
+.refresh-btn {
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}

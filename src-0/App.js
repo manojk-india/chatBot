@@ -1,19 +1,16 @@
 import React from 'react';
 import Chatbot from './components/chat/Chatbot.jsx';
 import IngestPage from './components/ingest/FileIngestionPage.jsx';
-import Navbar from './components/Navbar.jsx';
-
-import { BrowserRouter as Router, Routes, Route ,Navigate} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
 const App = () => (
   <Router>
-      <Routes>
-        <Route path="/" element={<Navigate to="/ingest" replace />} />
-        <Route path="/chatbot" element={<Chatbot />} />
-        <Route path="/ingest" element={<IngestPage />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Chatbot />} />
+      <Route path="/ingest" element={<IngestPage />} />
+    </Routes>
   </Router>
 );
 
