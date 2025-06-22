@@ -2,9 +2,12 @@ import './login.css'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useAuth } from '../AuthContext';
+
 
 
 const LoginPage = () => {
+  const { login } = useAuth();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
@@ -78,6 +81,7 @@ const LoginPage = () => {
       
       if (response.data.success) {
         localStorage.setItem('authenticated', 'true');
+        login('some-auth-token');
         navigate('/ingest', { state: { email: formData.email } });
       } else {
         alert("Login failed. Please try again.");
